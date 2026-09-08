@@ -1,7 +1,6 @@
 # 线性代数及其应用 · 学习笔记
 
->本仓库是学习教材 **Lay, Lay & McDonald《Linear Algebra and Its Applications》(6th ed., 2022)**时整理的个人笔记。
->用 Jupyter Notebook 记录每一节的要点
+>本仓库是学习教材 **Lay, Lay & McDonald《Linear Algebra and Its Applications》(6th ed., 2022)** 时整理的个人笔记。
 
 ---
 
@@ -16,14 +15,11 @@ Linear algebra/
 │   └── chapter_2_picture/    # 第 2 章用图（2-1.png ~ 2-55.png）
 └── README.md
 ```
-
-> 图片文件由 notebook 中的 Markdown 以相对路径引用，例如 `![2-9.png](picture/chapter_2_picture/2-9.png)`
-
 ---
 
 ## 内容概览
 
-### 📓 `chapter1.ipynb` — 线性代数中的线性方程
+### `chapter1.ipynb` — 线性代数中的线性方程
 
 | 教材章节 | 主题 | 主要知识点 |
 | :--- | :--- | :--- |
@@ -40,7 +36,7 @@ Linear algebra/
 | 补充 | Supplementary Exercises 46–47 | Givens 旋转、满射与零空间的关系 |
 
 
-### 📓 `chapter2.ipynb` — 矩阵代数
+### `chapter2.ipynb` — 矩阵代数
 
 | 教材章节 | 主题 | 主要知识点 |
 | :--- | :--- | :--- |
