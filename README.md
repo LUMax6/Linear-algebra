@@ -10,9 +10,11 @@
 Linear algebra/
 ├── chapter1.ipynb            # 第 1 章笔记：线性方程组 / 向量 / 线性变换 / 线性模型
 ├── chapter2.ipynb            # 第 2 章笔记：矩阵代数 / 逆矩阵 / LU / 子空间与秩
+├── chapter3.ipynb            # 第 3 章笔记：行列式 / Cramer 法则 / 面积与体积
 ├── picture/
 │   ├── chapter_1_picture/    # 第 1 章用图（1-1.png ~ 1-33.png）
-│   └── chapter_2_picture/    # 第 2 章用图（2-1.png ~ 2-55.png）
+│   ├── chapter_2_picture/    # 第 2 章用图（2-1.png ~ 2-55.png）
+│   └── chapter_3_picture/    # 第 3 章用图（3-1.png ~ 3-21.png）
 └── README.md
 ```
 ---
@@ -52,13 +54,24 @@ Linear algebra/
 | 补充 | Supplementary Exercise 20 | 反对易矩阵（anti‑commuting matrices） |
 
 
+### `chapter3.ipynb` — 行列式
+
+| 教材章节 | 主题 | 主要知识点 |
+| :--- | :--- | :--- |
+| 3.1 | Introduction to Determinants 行列式引论 | 2×2 / 3×3 行列式（Sarrus 对角线法则）、余子式与代数余子式、余子式展开定理（定理 1）、三角矩阵的行列式（定理 2）、行列式的面积直观 |
+| 3.2 | Properties of Determinants 行列式的性质 | 行变换对行列式的影响（定理 3：行替换不变 / 行交换变号 / 行倍乘缩比）、用行化简计算行列式、可逆性判据（定理 4）、转置（定理 5）、乘积（定理 6）、行列式的多重线性性 |
+| 3.3 | Cramer's Rule, Volume, and Linear Transformations 克拉默法则、体积与线性变换 | Cramer 法则（定理 7）、伴随矩阵求逆（定理 8）、面积与体积（定理 9）、线性变换对面积 / 体积的缩放（定理 10）、用外积（混合积）与多重线性性推导 Cramer 法则、椭圆 / 椭球面积体积、与前后章节的联系 |
+| 习题 | 3.1 43–44, 47–51；3.2 37–42, 51–54；3.3 23, 25–26, 31, 39–41 | 随机矩阵数值验证行列式规律、几何解释（平行四边形 / 平行六面体 / 椭球体积）、伴随矩阵与 Cramer 法则的数值与运算量对比 |
+
+
 ---
 
 ## 学习进度
 
 - [x] 第 1 章 Linear Equations in Linear Algebra（已整理）
 - [x] 第 2 章 Matrix Algebra（已整理）
-- [ ] 后续章节（持续更新中…）
+- [x] 第 3 章 Determinants 行列式（已整理）
+- [ ] 第 4 章及以后（持续更新中…）
 
 ---
 
