@@ -11,6 +11,7 @@ Linear algebra/
 ├── chapter1.ipynb            # 第 1 章笔记：线性方程组 / 向量 / 线性变换 / 线性模型
 ├── chapter2.ipynb            # 第 2 章笔记：矩阵代数 / 逆矩阵 / LU / 子空间与秩
 ├── chapter3.ipynb            # 第 3 章笔记：行列式 / Cramer 法则 / 面积与体积
+├── chapter4.ipynb            # 第 4 章笔记：向量空间 / 零空间与列空间 / 基与维数 / 基变换 / 信号与差分方程
 ├── picture/
 │   ├── chapter_1_picture/    # 第 1 章用图（1-1.png ~ 1-33.png）
 │   ├── chapter_2_picture/    # 第 2 章用图（2-1.png ~ 2-55.png）
@@ -64,6 +65,22 @@ Linear algebra/
 | 习题 | 3.1 43–44, 47–51；3.2 37–42, 51–54；3.3 23, 25–26, 31, 39–41 | 随机矩阵数值验证行列式规律、几何解释（平行四边形 / 平行六面体 / 椭球体积）、伴随矩阵与 Cramer 法则的数值与运算量对比 |
 
 
+### `chapter4.ipynb` — 向量空间
+
+| 教材章节 | 主题 | 主要知识点 |
+| :--- | :--- | :--- |
+| 4.1 | Vector Spaces and Subspaces 向量空间与子空间 | 向量空间 10 条公理、由公理推出的基本性质（$0\mathbf{u}=\mathbf{0}$、$c\mathbf{0}=\mathbf{0}$、$(-1)\mathbf{u}=-\mathbf{u}$）、典型空间（$\mathbb{R}^n$、信号空间 $\mathbb{S}$、多项式 $\mathbb{P}_n$）、子空间三条件、Span 是子空间 |
+| 4.2 | Null Spaces, Column Spaces, Row Spaces 零空间、列空间、行空间 | $\operatorname{Nul}A$（隐式）与 $\operatorname{Col}A$（显式）的定义、定理 2/3、行空间 $\operatorname{Row}A=\operatorname{Col}A^{T}$、两者的对比表、线性变换的核与值域 |
+| 4.3 | Linearly Independent Sets; Bases 线性无关集与基 | 线性无关 / 相关的抽象定义、定理 4、基的定义、张成集定理（定理 5）、主元列构成 $\operatorname{Col}A$ 的基（定理 6）、行等价保持行空间（定理 7） |
+| 4.4 | Coordinate Systems 坐标系 | 唯一表示定理（定理 8）、坐标向量与坐标映射、坐标变换矩阵 $P_B$、坐标映射是同构（定理 9）、用坐标向量判断线性相关性 |
+| 4.5 | The Dimension of a Vector Space 维数 | 定理 10/11（维数良定义）、有限维与无限维、定理 12（子空间维数 $\dim H\le\dim V$）、基定理（定理 13）、秩与零化度、秩定理（定理 14）、可逆矩阵定理续（m–q） |
+| 4.6 | Change of Basis 基的变换 | 定理 15、坐标变换矩阵 ${}_{C\leftarrow B}P$（列 = 旧基向量的新坐标）、$({}_{C\leftarrow B}P)^{-1}={}_{B\leftarrow C}P$、ℝⁿ 中的行化简算法、三基传递关系 ${}_{D\leftarrow B}P={}_{D\leftarrow C}P\cdot{}_{C\leftarrow B}P$ |
+| 4.7 | Digital Signal Processing 数字信号处理 | 信号空间 $\mathbb{S}$ 与常见信号表（$\delta$、$\upsilon$、$\chi$、$\alpha$、Fibonacci、指数）、移位变换 $S$、线性时不变（LTI）变换（定理 16）、移动平均 $M_m$、$\mathbb{S}_n\cong\mathbb{R}^{n+1}$（定理 17）、$\mathbb{S}_f$ 无限维（定理 18） |
+| 4.8 | Applications to Difference Equations 差分方程 | Casorati 矩阵与 Casoratian 检验、$n$ 阶线性差分方程、辅助方程与 $\{r^k\}$ 试探解、定理 19（初值唯一解）、定理 20（齐次解空间为 $n$ 维）、基本解组、非齐次通解结构、化为一阶方程组 $\mathbf{x}_{k+1}=A\mathbf{x}_k$ |
+| 习题 | 4.1 5–8, 19–20, 30, 33–37, 40–42, 44–46；4.2 40–41, 43, 45–46, 50–52；4.3 18, 36, 38, 41–42, 46–48；4.4 27–30, 38, 40–42；4.5 51–54；4.6 7, 9, 16, 19–22；4.7 10, 12, 14, 25, 27, 30, 32；4.8 17, 23–24, 27, 31, 35 | 子空间判定与公理证明、弹簧振子 / 连续函数空间、$H\cap K$ 与 $H+K$、列空间与零空间判定、多项式与三角函数族的线性无关（行列式 / 数值验证）、钛晶格坐标、扩充基、升幂 / 降幂公式与积分应用、移动平均滤波、Fibonacci 通解、差分方程建模 |
+| 总结 | 第四章总结表 | 逐节核心概念与关键结论汇总；主线：任何 $n$ 维实向量空间都与 $\mathbb{R}^n$ 同构 |
+
+
 ---
 
 ## 学习进度
@@ -71,7 +88,8 @@ Linear algebra/
 - [x] 第 1 章 Linear Equations in Linear Algebra（已整理）
 - [x] 第 2 章 Matrix Algebra（已整理）
 - [x] 第 3 章 Determinants 行列式（已整理）
-- [ ] 第 4 章及以后（持续更新中…）
+- [x] 第 4 章 Vector Spaces 向量空间（已整理）
+- [ ] 第 5 章及以后（持续更新中…）
 
 ---
 
