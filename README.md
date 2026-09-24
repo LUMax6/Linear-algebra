@@ -70,8 +70,8 @@ Linear algebra/
 | 教材章节 | 主题 | 主要知识点 |
 | :--- | :--- | :--- |
 | 4.1 | Vector Spaces and Subspaces 向量空间与子空间 | 向量空间 10 条公理、由公理推出的基本性质（$0\mathbf{u}=\mathbf{0}$、$c\mathbf{0}=\mathbf{0}$、$(-1)\mathbf{u}=-\mathbf{u}$）、典型空间（$\mathbb{R}^n$、信号空间 $\mathbb{S}$、多项式 $\mathbb{P}_n$）、子空间三条件、Span 是子空间 |
-| 4.2 | Null Spaces, Column Spaces, Row Spaces 零空间、列空间、行空间 | $\operatorname{Nul}A$（隐式）与 $\operatorname{Col}A$（显式）的定义、定理 2/3、行空间 $\operatorname{Row}A=\operatorname{Col}A^{T}$、两者的对比表、线性变换的核与值域 |
-| 4.3 | Linearly Independent Sets; Bases 线性无关集与基 | 线性无关 / 相关的抽象定义、定理 4、基的定义、张成集定理（定理 5）、主元列构成 $\operatorname{Col}A$ 的基（定理 6）、行等价保持行空间（定理 7） |
+| 4.2 | Null Spaces, Column Spaces, Row Spaces 零空间、列空间、行空间 | $\mathrm{Nul}A$（隐式）与 $\mathrm{Col}A$（显式）的定义、定理 2/3、行空间 $\mathrm{Row}A=\mathrm{Col}A^{T}$、两者的对比表、线性变换的核与值域 |
+| 4.3 | Linearly Independent Sets; Bases 线性无关集与基 | 线性无关 / 相关的抽象定义、定理 4、基的定义、张成集定理（定理 5）、主元列构成 $\mathrm{Col}A$ 的基（定理 6）、行等价保持行空间（定理 7） |
 | 4.4 | Coordinate Systems 坐标系 | 唯一表示定理（定理 8）、坐标向量与坐标映射、坐标变换矩阵 $P_B$、坐标映射是同构（定理 9）、用坐标向量判断线性相关性 |
 | 4.5 | The Dimension of a Vector Space 维数 | 定理 10/11（维数良定义）、有限维与无限维、定理 12（子空间维数 $\dim H\le\dim V$）、基定理（定理 13）、秩与零化度、秩定理（定理 14）、可逆矩阵定理续（m–q） |
 | 4.6 | Change of Basis 基的变换 | 定理 15、坐标变换矩阵 ${}_{C\leftarrow B}P$（列 = 旧基向量的新坐标）、$({}_{C\leftarrow B}P)^{-1}={}_{B\leftarrow C}P$、ℝⁿ 中的行化简算法、三基传递关系 ${}_{D\leftarrow B}P={}_{D\leftarrow C}P\cdot{}_{C\leftarrow B}P$ |
