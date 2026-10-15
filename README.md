@@ -95,7 +95,6 @@ Linear algebra/
 | 5.7 | Applications to Differential Equations 微分方程应用 | $x'=Ax$ 的特征函数解 $x=ve^{\lambda t}$、解耦、复特征值经欧拉公式提取实解 $y_1,y_2$、几何分类（sink/source/saddle/spiral）与 5.6 的对比、电路（RLC）建模 |
 | 5.8 | Iterative Estimates for Eigenvalues 特征值的迭代估计 | 为何难以精确求特征值（阿贝尔-鲁菲尼定理 / 病态）、幂法（严格主导特征值）、收敛速率 $|\lambda_2/\lambda_1|$、反幂法（任意特征值，需初估 $\alpha$）、Rayleigh 商加速 |
 | 5.9 | Applications to Markov Chains 马尔可夫链的应用 | 概率向量与随机矩阵、定理 10（1 是特征值）、稳态向量、正则随机矩阵与定理 11（唯一稳态、收敛与初值无关）、求稳态向量的两种方法对比 |
-| 补充 | Supplementary Exercises 补充习题 | 2×2 特征多项式 $\lambda^2-(\operatorname{tr}A)\lambda+\det A$、$A^k\to L$ 的极限秩 1 矩阵、伴随矩阵（companion matrix）与 Vandermonde 对角化、矩阵程序对角化实践 |
 | 总结 | 第五章总结 | 逐节核心方法与关键结论汇总；主线：特征值求法 → 对角化 → 差分方程 / 微分方程 / 马尔可夫链 |
 
 
