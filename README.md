@@ -12,6 +12,7 @@ Linear algebra/
 ├── chapter2.ipynb            # 第 2 章笔记：矩阵代数 / 逆矩阵 / LU / 子空间与秩
 ├── chapter3.ipynb            # 第 3 章笔记：行列式 / Cramer 法则 / 面积与体积
 ├── chapter4.ipynb            # 第 4 章笔记：向量空间 / 零空间与列空间 / 基与维数 / 基变换 / 信号与差分方程
+├── chapter5.ipynb            # 第 5 章笔记：特征值特征向量 / 特征方程 / 对角化 / 复特征值 / 差分与微分方程 / 马尔可夫链 / 迭代估计
 ├── picture/
 │   ├── chapter_1_picture/    # 第 1 章用图（1-1.png ~ 1-33.png）
 │   ├── chapter_2_picture/    # 第 2 章用图（2-1.png ~ 2-55.png）
@@ -81,6 +82,23 @@ Linear algebra/
 | 总结 | 第四章总结表 | 逐节核心概念与关键结论汇总；主线：任何 n 维实向量空间都与 n 维实数组空间同构 |
 
 
+### `chapter5.ipynb` — 特征值与特征向量
+
+| 教材章节 | 主题 | 主要知识点 |
+| :--- | :--- | :--- |
+| 5.1 | Eigenvectors and Eigenvalues 特征向量与特征值 | 定义 $Ax=\lambda x$、特征空间（零空间）、三角矩阵特征值（定理 1）、不同特征值对应特征向量线性无关（定理 2）、判断特征向量 / 特征值、差分方程初探 |
+| 5.2 | The Characteristic Equation 特征方程 | 特征多项式与特征方程 $\det(A-\lambda I)=0$、行列式性质回顾（定理 3）、0 不是特征值 ⇔ 可逆、相似与相似变换（定理 4）、QR 迭代保持特征值、$\det A=\prod\lambda_i$ |
+| 5.3 | Diagonalization 对角化 | 对角化定理（定理 5）、$A=PDP^{-1}$ 的构造步骤、有 n 个不同特征值必可对角化（定理 6）、几何重数 ≤ 代数重数（定理 7）、$A^k=PD^kP^{-1}$ |
+| 5.4 | Eigenvectors and Linear Transformations 线性变换的特征向量 | 抽象线性变换的特征值 / 特征向量、B-矩阵与矩阵表示、对角表示定理（定理 8）、相似 = 同一变换在不同基下的矩阵、迹的性质 |
+| 5.5 | Complex Eigenvalues 复特征值 | 实矩阵复特征值成共轭对、复向量的实部 / 虚部、旋转 + 缩放基本构件 $C=\begin{bmatrix}a&-b\\b&a\end{bmatrix}$、定理 9：$A=PCP^{-1}$、实部虚部线性无关的证明、不变平面 |
+| 5.6 | Discrete Dynamical Systems 离散动力系统 | 差分方程 $x_{k+1}=Ax_k$ 的通解、主导特征值与长期行为、吸引子 / 排斥子 / 鞍点 / 螺线点的几何分类、换元解耦 $y_k=P^{-1}x_k$、种群阶段矩阵模型 |
+| 5.7 | Applications to Differential Equations 微分方程应用 | $x'=Ax$ 的特征函数解 $x=ve^{\lambda t}$、解耦、复特征值经欧拉公式提取实解 $y_1,y_2$、几何分类（sink/source/saddle/spiral）与 5.6 的对比、电路（RLC）建模 |
+| 5.8 | Iterative Estimates for Eigenvalues 特征值的迭代估计 | 为何难以精确求特征值（阿贝尔-鲁菲尼定理 / 病态）、幂法（严格主导特征值）、收敛速率 $|\lambda_2/\lambda_1|$、反幂法（任意特征值，需初估 $\alpha$）、Rayleigh 商加速 |
+| 5.9 | Applications to Markov Chains 马尔可夫链的应用 | 概率向量与随机矩阵、定理 10（1 是特征值）、稳态向量、正则随机矩阵与定理 11（唯一稳态、收敛与初值无关）、求稳态向量的两种方法对比 |
+| 补充 | Supplementary Exercises 补充习题 | 2×2 特征多项式 $\lambda^2-(\operatorname{tr}A)\lambda+\det A$、$A^k\to L$ 的极限秩 1 矩阵、伴随矩阵（companion matrix）与 Vandermonde 对角化、矩阵程序对角化实践 |
+| 总结 | 第五章总结 | 逐节核心方法与关键结论汇总；主线：特征值求法 → 对角化 → 差分方程 / 微分方程 / 马尔可夫链 |
+
+
 ---
 
 ## 学习进度
@@ -89,7 +107,8 @@ Linear algebra/
 - [x] 第 2 章 Matrix Algebra（已整理）
 - [x] 第 3 章 Determinants 行列式（已整理）
 - [x] 第 4 章 Vector Spaces 向量空间（已整理）
-- [ ] 第 5 章及以后（持续更新中…）
+- [x] 第 5 章 Eigenvalues and Eigenvectors 特征值与特征向量（已整理）
+- [ ] 第 6 章及以后（持续更新中…）
 
 ---
 
