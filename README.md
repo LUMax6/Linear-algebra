@@ -13,10 +13,12 @@ Linear algebra/
 ├── chapter3.ipynb            # 第 3 章笔记：行列式 / Cramer 法则 / 面积与体积
 ├── chapter4.ipynb            # 第 4 章笔记：向量空间 / 零空间与列空间 / 基与维数 / 基变换 / 信号与差分方程
 ├── chapter5.ipynb            # 第 5 章笔记：特征值特征向量 / 特征方程 / 对角化 / 复特征值 / 差分与微分方程 / 马尔可夫链 / 迭代估计
+├── chapter6.ipynb            # 第 6 章笔记：内积与正交 / 正交投影 / Gram–Schmidt 与 QR / 最小二乘 / 线性模型 / 内积空间
 ├── picture/
 │   ├── chapter_1_picture/    # 第 1 章用图（1-1.png ~ 1-33.png）
 │   ├── chapter_2_picture/    # 第 2 章用图（2-1.png ~ 2-55.png）
-│   └── chapter_3_picture/    # 第 3 章用图（3-1.png ~ 3-21.png）
+│   ├── chapter_3_picture/    # 第 3 章用图（3-1.png ~ 3-21.png）
+│   └── chapter_6_picture/    # 第 6 章用图（6-1.png）
 └── README.md
 ```
 ---
@@ -95,7 +97,25 @@ Linear algebra/
 | 5.7 | Applications to Differential Equations 微分方程应用 | $x'=Ax$ 的特征函数解 $x=ve^{\lambda t}$、解耦、复特征值经欧拉公式提取实解 $y_1,y_2$、几何分类（sink/source/saddle/spiral）与 5.6 的对比、电路（RLC）建模 |
 | 5.8 | Iterative Estimates for Eigenvalues 特征值的迭代估计 | 为何难以精确求特征值（阿贝尔-鲁菲尼定理 / 病态）、幂法（严格主导特征值）、收敛速率 $|\lambda_2/\lambda_1|$、反幂法（任意特征值，需初估 $\alpha$）、Rayleigh 商加速 |
 | 5.9 | Applications to Markov Chains 马尔可夫链的应用 | 概率向量与随机矩阵、定理 10（1 是特征值）、稳态向量、正则随机矩阵与定理 11（唯一稳态、收敛与初值无关）、求稳态向量的两种方法对比 |
-| 总结 | 第五章总结 | 逐节核心方法与关键结论汇总；主线：特征值求法 → 对角化 → 差分方程 / 微分方程 / 马尔可夫链 |
+| 专题补充 | ① 相似与对角化（5.3 后）、② 微分算子的特征函数（5.7 后）、③ 马尔可夫链稳态（5.9 后）、④ 数值计算思路（5.8 后） | 相似 = 同一线性变换在不同基下，"能做相似变换"≠"可对角化"；$e^{\lambda t}$ 是微分算子 $D$ 的特征函数、$v$ 是 $A$ 的特征向量；列和为 1 ⇒ 1 是特征值，**正则性**才保证唯一稳态与收敛；QR 迭代（相似变换）把 $\lambda$ 与 $v$ **一起**算出，为第六章 QR 分解铺垫 |
+| 总结 | 第五章总结 + 专题补充索引 | 逐节核心方法与关键结论汇总；主线：特征值求法 → 对角化 → 差分方程 / 微分方程 / 马尔可夫链 |
+
+
+### `chapter6.ipynb` — 正交性与最小二乘
+
+| 教材章节 | 主题 | 主要知识点 |
+| :--- | :--- | :--- |
+| 6.1 | Inner Product, Length, and Orthogonality 内积、长度与正交性 | 内积 $\mathbf{u}\cdot\mathbf{v}=\mathbf{u}^T\mathbf{v}$ 及其性质（定理 1）、长度 / 单位向量 / 距离、正交与勾股定理（定理 2）、正交补、四个基本子空间的正交关系（定理 3：$(\operatorname{Row}A)^\perp=\operatorname{Nul}A$、$(\operatorname{Col}A)^\perp=\operatorname{Nul}A^T$）、$\mathbb{R}^2$ / $\mathbb{R}^3$ 的夹角与相关系数 |
+| 6.2 | Orthogonal Sets 正交集合 | 正交组与正交基、定理 4（非零正交组线性无关）、定理 5（正交基下的系数由内积直接给出）、向直线的正交投影、标准正交组与正交矩阵、定理 6（$U^TU=I$）、定理 7（正交变换保内积 / 长度 / 夹角）、投影矩阵 $UU^T$ |
+| 6.3 | Orthogonal Projections 正交投影 | 到子空间的正交投影、定理 8（正交分解定理）、定理 9（最佳逼近定理）、定理 10（$\operatorname{proj}_W\mathbf{y}=UU^T\mathbf{y}$）、用正交基展开、最近点与距离的计算 |
+| 6.4 | The Gram–Schmidt Process 格拉姆–施密特正交化 | 定理 11 Gram–Schmidt 过程、定理 12 QR 分解（$A=QR$、$R=Q^TA$）、数值稳定性讨论、Householder 反射矩阵与基于正交变换的 QR 算法 |
+| 6.5 | Least-Squares Problems 最小二乘问题 | 最小二乘解与最小二乘误差、定理 13 正规方程 $A^TA\hat{\mathbf{x}}=A^T\mathbf{b}$、定理 14 解的唯一性（列线性无关 ⇔ $A^TA$ 可逆）、定理 15 QR 解法、三种解法（正规方程 / QR / 几何投影）对比 |
+| 6.6 | Machine Learning and Linear Models 机器学习与线性模型 | 设计矩阵 / 观测向量 / 参数向量、最小二乘直线与回归系数、一般线性模型与多元回归、多项式 / 三角 / 指数模型、“线性”指对参数线性、均值偏差形式、误差平方和分解 $SS(T)=SS(R)+SS(E)$ |
+| 6.7 | Inner Product Spaces 内积空间 | 内积公理、加权内积、积分内积 $\langle f,g\rangle=\int_a^b f(t)g(t)\,dt$、Cauchy–Schwarz 不等式（定理 16）与三角不等式（定理 17）、函数空间的正交基与 Gram–Schmidt、Legendre 多项式、极化恒等式 |
+| 6.8 | Applications of Inner Product Spaces 内积空间的应用 | 加权最小二乘（化为 $WX\boldsymbol{\beta}\approx W\mathbf{y}$ 的普通最小二乘）、趋势分析（正交多项式与趋势系数）、傅里叶系数与 $n$ 阶傅里叶逼近、正交投影统一视角 |
+| 习题 | 6.1 27, 29, 32, 37–42；6.2 33, 35–37, 39, 43–44；6.3 11, 19, 31–32, 35, 37–38；6.4 15, 23, 25, 27, 29–30；6.5 11, 15, 23, 25, 27, 29–31, 33–34；6.6 11, 13, 15–17, 19–20, 23, 25–26；6.7 14, 17, 31, 33–34；6.8 1, 4, 5–7, 10, 15–16 | 四个基本子空间正交关系的数值验证、正交矩阵保长度与夹角、投影矩阵 $UU^T$ 的性质、图案识别与最近点、QR 分解与 Gram–Schmidt 的数值对照、最小二乘的几何与代数解法、开普勒轨道与放射性衰变拟合、多项式速度估计、加权最小二乘与傅里叶逼近 |
+| 补充 | 补充 21, 25, 30, 31, 32, 34, 37 | Bessel 不等式、Householder 矩阵（QR 的数值实现）、Rayleigh 商、四个基本子空间的关系、Schur 分解、条件数与相对误差估计 |
+| 总结 | 第六章总结表 | 逐节核心公式与定理汇总；主线：内积 → 正交 → 投影 → Gram–Schmidt / QR → 最小二乘 → 线性模型 → 内积空间及其应用 |
 
 
 ---
@@ -107,7 +127,8 @@ Linear algebra/
 - [x] 第 3 章 Determinants 行列式（已整理）
 - [x] 第 4 章 Vector Spaces 向量空间（已整理）
 - [x] 第 5 章 Eigenvalues and Eigenvectors 特征值与特征向量（已整理）
-- [ ] 第 6 章及以后（持续更新中…）
+- [x] 第 6 章 Orthogonality and Least Squares 正交性与最小二乘（已整理）
+- [ ] 第 7 章及以后（持续更新中…）
 
 ---
 
