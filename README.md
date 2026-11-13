@@ -107,9 +107,9 @@ Linear algebra/
 
 | 教材章节 | 主题 | 主要知识点 |
 | :--- | :--- | :--- |
-| 6.1 | Inner Product, Length, and Orthogonality 内积、长度与正交性 | 内积 $\mathbf{u}\cdot\mathbf{v}=\mathbf{u}^T\mathbf{v}$ 及其性质（定理 1）、长度 / 单位向量 / 距离、正交与勾股定理（定理 2）、正交补、四个基本子空间的正交关系（定理 3：$(\operatorname{Row}A)^\perp=\operatorname{Nul}A$、$(\operatorname{Col}A)^\perp=\operatorname{Nul}A^T$）、$\mathbb{R}^2$ / $\mathbb{R}^3$ 的夹角与相关系数 |
+| 6.1 | Inner Product, Length, and Orthogonality 内积、长度与正交性 | 内积 $\mathbf{u}\cdot\mathbf{v}=\mathbf{u}^T\mathbf{v}$ 及其性质（定理 1）、长度 / 单位向量 / 距离、正交与勾股定理（定理 2）、正交补、四个基本子空间的正交关系（定理 3：$(\mathrm{Row}\,A)^\perp=\mathrm{Nul}\,A$、$(\mathrm{Col}\,A)^\perp=\mathrm{Nul}\,A^T$）、$\mathbb{R}^2$ / $\mathbb{R}^3$ 的夹角与相关系数 |
 | 6.2 | Orthogonal Sets 正交集合 | 正交组与正交基、定理 4（非零正交组线性无关）、定理 5（正交基下的系数由内积直接给出）、向直线的正交投影、标准正交组与正交矩阵、定理 6（$U^TU=I$）、定理 7（正交变换保内积 / 长度 / 夹角）、投影矩阵 $UU^T$ |
-| 6.3 | Orthogonal Projections 正交投影 | 到子空间的正交投影、定理 8（正交分解定理）、定理 9（最佳逼近定理）、定理 10（$\operatorname{proj}_W\mathbf{y}=UU^T\mathbf{y}$）、用正交基展开、最近点与距离的计算 |
+| 6.3 | Orthogonal Projections 正交投影 | 到子空间的正交投影、定理 8（正交分解定理）、定理 9（最佳逼近定理）、定理 10（$\mathrm{proj}_W\mathbf{y}=UU^T\mathbf{y}$）、用正交基展开、最近点与距离的计算 |
 | 6.4 | The Gram–Schmidt Process 格拉姆–施密特正交化 | 定理 11 Gram–Schmidt 过程、定理 12 QR 分解（$A=QR$、$R=Q^TA$）、数值稳定性讨论、Householder 反射矩阵与基于正交变换的 QR 算法 |
 | 6.5 | Least-Squares Problems 最小二乘问题 | 最小二乘解与最小二乘误差、定理 13 正规方程 $A^TA\hat{\mathbf{x}}=A^T\mathbf{b}$、定理 14 解的唯一性（列线性无关 ⇔ $A^TA$ 可逆）、定理 15 QR 解法、三种解法（正规方程 / QR / 几何投影）对比 |
 | 6.6 | Machine Learning and Linear Models 机器学习与线性模型 | 设计矩阵 / 观测向量 / 参数向量、最小二乘直线与回归系数、一般线性模型与多元回归、多项式 / 三角 / 指数模型、“线性”指对参数线性、均值偏差形式、误差平方和分解 $SS(T)=SS(R)+SS(E)$ |
@@ -127,7 +127,7 @@ Linear algebra/
 | 7.1 | Diagonalization of Symmetric Matrices 对称矩阵的对角化 | 对称矩阵定义、定理 1（不同特征值的特征向量正交）、正交矩阵与正交对角化、定理 2（可正交对角化 ⇔ 对称）、定理 3 谱定理、谱分解 $A=\sum\lambda_i\mathbf{u}_i\mathbf{u}_i^T$、正交相似变换的数值稳定性 |
 | 7.2 | Quadratic Forms 二次型 | 二次型的矩阵表示、定理 4 主轴定理（正交换元 $\mathbf{x}=P\mathbf{y}$ 消去交叉项）、正定 / 负定 / 不定 / 半正定、定理 5 用特征值判别、Cholesky 分解 |
 | 7.3 | Constrained Optimization 约束优化 | 单位球面上的二次型、定理 6（最大值 / 最小值为最大 / 最小特征值）、定理 7、8（依次加正交约束得到后续特征值） |
-| 7.4 | The Singular Value Decomposition 奇异值分解 | 奇异值与 $A^TA$ 的特征值、定理 9（$A\mathbf{v}_i$ 构成 $\operatorname{Col}A$ 正交基）、定理 10 SVD、三步构造法、四个基本子空间的正交基、可逆矩阵定理补充 s–v、约化 SVD 与伪逆、条件数与有效秩 |
+| 7.4 | The Singular Value Decomposition 奇异值分解 | 奇异值与 $A^TA$ 的特征值、定理 9（$A\mathbf{v}_i$ 构成 $\mathrm{Col}\,A$ 正交基）、定理 10 SVD、三步构造法、四个基本子空间的正交基、可逆矩阵定理补充 s–v、约化 SVD 与伪逆、条件数与有效秩 |
 | 7.5 | Applications to Image Processing and Statistics 图像处理与统计应用 | 多维观测矩阵、样本均值与均值偏差形式、样本协方差矩阵 $S$、主成分（$S$ 的单位特征向量）、方差解释比例与降维、用 SVD 计算 PCA |
 | 习题 | 7.1 27, 33, 36–38, 41–43；7.2 13, 15, 32–36；7.3 3, 8, 13；7.4 11, 15, 17, 19–21, 23, 25, 27–28；7.5 1, 3, 11–13 | 谱分解的几何解释、投影矩阵 $B=UU^T$ 的性质、二次型分类与主轴变换、约束下二次型的最值、SVD 的手算与程序计算对照、条件数与伪逆求最小长度最小二乘解、PCA 的方差解释 |
 | 补充 | 补充 23, 26–31 | Cholesky 分解与 QR、半正定矩阵的秩揭示分解、极分解、伪逆的四条性质、最小长度最小二乘解 |
