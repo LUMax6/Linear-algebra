@@ -20,7 +20,7 @@ Linear algebra/
 │   ├── chapter_2_picture/    # 第 2 章用图（2-1.png ~ 2-55.png）
 │   ├── chapter_3_picture/    # 第 3 章用图（3-1.png ~ 3-21.png）
 │   ├── chapter_6_picture/    # 第 6 章用图（6-1.png）
-│   └── chapter_7_picture/    # 第 7 章用图（7-1.png、composition-with-large-red-plane-yellow-black-gray-and-blue.jpg、Mona_Lisa.JPG）
+│   └── chapter_7_picture/    # 第 7 章用图（7-1.png、composition-with-large-red-plane-yellow-black-gray-and-blue.jpg、Mona_Lisa.JPG；后两幅作品图取自 wikiart.org）
 └── README.md
 ```
 ---
