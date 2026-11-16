@@ -20,7 +20,7 @@ Linear algebra/
 │   ├── chapter_2_picture/    # 第 2 章用图（2-1.png ~ 2-55.png）
 │   ├── chapter_3_picture/    # 第 3 章用图（3-1.png ~ 3-21.png）
 │   ├── chapter_6_picture/    # 第 6 章用图（6-1.png）
-│   └── chapter_7_picture/    # 第 7 章用图（7-1.png）
+│   └── chapter_7_picture/    # 第 7 章用图（7-1.png、composition-with-large-red-plane-yellow-black-gray-and-blue.jpg、Mona_Lisa.JPG）
 └── README.md
 ```
 ---
@@ -128,7 +128,7 @@ Linear algebra/
 | 7.2 | Quadratic Forms 二次型 | 二次型的矩阵表示、定理 4 主轴定理（正交换元 $\mathbf{x}=P\mathbf{y}$ 消去交叉项）、正定 / 负定 / 不定 / 半正定、定理 5 用特征值判别、Cholesky 分解 |
 | 7.3 | Constrained Optimization 约束优化 | 单位球面上的二次型、定理 6（最大值 / 最小值为最大 / 最小特征值）、定理 7、8（依次加正交约束得到后续特征值） |
 | 7.4 | The Singular Value Decomposition 奇异值分解 | 奇异值与 $A^TA$ 的特征值、定理 9（$A\mathbf{v}_i$ 构成 $\mathrm{Col}\,A$ 正交基）、定理 10 SVD、三步构造法、四个基本子空间的正交基、可逆矩阵定理补充 s–v、约化 SVD 与伪逆、条件数与有效秩 |
-| 7.5 | Applications to Image Processing and Statistics 图像处理与统计应用 | 多维观测矩阵、样本均值与均值偏差形式、样本协方差矩阵 $S$、主成分（$S$ 的单位特征向量）、方差解释比例与降维、用 SVD 计算 PCA |
+| 7.5 | Applications to Image Processing and Statistics 图像处理与统计应用 | 多维观测矩阵、样本均值与均值偏差形式、样本协方差矩阵 $S$、PCA 四步流程（中心化 → 协方差 $S=\frac{1}{N-1}BB^T$ → 主成分方向 $S=PDP^T$ → 投影得分 $Y=P^TB$）、方差解释比例与降维、用 SVD 计算 PCA；图像低秩近似 $A_k=\sum_{i\le k}\sigma_i\mathbf{u}_i\mathbf{v}_i^T$、蒙德里安与《蒙娜丽莎》同尺寸比较、旋转 45° 补边前后奇异值与低秩近似效果对照 |
 | 习题 | 7.1 27, 33, 36–38, 41–43；7.2 13, 15, 32–36；7.3 3, 8, 13；7.4 11, 15, 17, 19–21, 23, 25, 27–28；7.5 1, 3, 11–13 | 谱分解的几何解释、投影矩阵 $B=UU^T$ 的性质、二次型分类与主轴变换、约束下二次型的最值、SVD 的手算与程序计算对照、条件数与伪逆求最小长度最小二乘解、PCA 的方差解释 |
 | 补充 | 补充 23, 26–31 | Cholesky 分解与 QR、半正定矩阵的秩揭示分解、极分解、伪逆的四条性质、最小长度最小二乘解 |
 | 总结 | 本章理论总结表 | 逐节核心公式与定理汇总；主线：对称矩阵 → 二次型 → 约束优化 → SVD → PCA |
